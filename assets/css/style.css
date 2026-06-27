@@ -420,10 +420,17 @@ section {
   font-size: 0.75rem;
   font-weight: 600;
   color: var(--text-secondary);
-  white-space: nowrap;
   display: flex;
   align-items: center;
   gap: 6px;
+  white-space: nowrap;
+}
+
+.shield-badge.bottom-left {
+  white-space: normal;
+  max-width: 200px;
+  line-height: 1.5;
+  align-items: flex-start;
 }
 
 .shield-badge i {
