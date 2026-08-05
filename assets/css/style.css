@@ -1211,3 +1211,68 @@ footer {
   .hero-name { font-size: 2.2rem; }
   .stats-grid { grid-template-columns: 1fr; }
 }
+
+/* ===== Writing / Articles ===== */
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.article-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  display: flex;
+  gap: 20px;
+  transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+
+.article-card:hover {
+  border-color: var(--border-accent);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.12);
+}
+
+.article-icon-wrap {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  background: rgba(59, 130, 246, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-blue-light);
+  font-size: 1.25rem;
+}
+
+.article-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.article-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.45;
+}
+
+.article-excerpt {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.article-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+@media (max-width: 768px) {
+  .articles-grid { grid-template-columns: 1fr; }
+}
