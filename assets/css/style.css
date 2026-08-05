@@ -1261,6 +1261,16 @@ footer {
   line-height: 1.45;
 }
 
+.article-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.article-title a:hover {
+  color: var(--accent-blue-light);
+  text-decoration: underline;
+}
+
 .article-excerpt {
   font-size: 0.82rem;
   color: var(--text-secondary);
